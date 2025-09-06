@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Reference</title>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .main-title {
+            color: #0d6efd;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dee2e6;
+            margin-bottom: 30px;
+        }
+
+        .element-container {
+            margin-bottom: 30px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .element-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .element-title {
+            margin: 0;
+            color: #212529;
+            font-size: 1.25rem;
+        }
+
+        .element-description {
+            padding: 15px 20px;
+            background: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .code-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .code-section pre {
+            margin: 0;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #dee2e6;
+            overflow-x: auto;
+        }
+
+        .code-section code {
+            font-family: 'SF Mono', Menlo, Monaco, Consolas, monospace;
+            font-size: 14px;
+            color: #212529;
+        }
+
+        .output-section {
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        .output-label {
+            background: #dc3545;
+            color: #ffffff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            width: fit-content;
+            display: block;
+        }
+
+        /* Table styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        /* Form styles */
+        form {
+            margin: 10px 0;
+        }
+
+        input,
+        button {
+            margin: 5px 0;
+            padding: 6px 12px;
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="main-title">HTML Elements Reference Guide</h1>
+    <h2>
+        HTML = HyperText Markup Language
+    </h2>
+
+    <p>
+        It's the standard language used to create and structure web pages. Think of it as the backbone of any website —
+        it defines the content (like text, images, links, videos, forms).
+    </p>
+
+    <!-- Text Elements -->
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Headings</h2>
+        </div>
+
+        <div class="element-description">
+            <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, with
+                <code>&lt;h1&gt;</code> being the most important and largest, and <code>&lt;h6&gt;</code> the least
+                important and smallest.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;h1&gt;Heading Level 1&lt;/h1&gt;
+&lt;h2&gt;Heading Level 2&lt;/h2&gt;
+&lt;h3&gt;Heading Level 3&lt;/h3&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <h1>Heading Level 1</h1>
+            <h2>Heading Level 2</h2>
+            <h3>Heading Level 3</h3>
+        </div>
+    </section>
+
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Paragraph</h2>
+        </div>
+
+        <div class="element-description">
+            <p>A paragraph is defined with the <code>&lt;p&gt;</code> tag. It is used to represent a block of text.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;p&gt;This is a paragraph element&lt;/p&gt;
+                <br />&lt;p&gt;Another paragraph here.&lt;/p&gt;
+            </code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <p>This is a paragraph element</p>
+            <p>Another paragraph here.</p>
+        </div>
+    </section>
+
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Text Formatting</h2>
+        </div>
+
+        <div class="element-description">
+            <p>Text formatting elements are used to style and emphasize text. The most common formatting elements are
+                <code>&lt;strong&gt;</code> for bold text and <code>&lt;em&gt;</code> for italic text.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italic text&lt;/em&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <p><strong>Bold text</strong> <br /> <em>italic text</em></p>
+        </div>
+    </section>
+
+    <!-- Lists -->
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Lists</h2>
+        </div>
+
+        <div class="element-description">
+            <p>HTML supports two main types of lists: unordered lists (<code>&lt;ul&gt;</code>) and ordered lists
+                (<code>&lt;ol&gt;</code>). List items are defined with the <code>&lt;li&gt;</code> tag.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;List item 1&lt;/li&gt;
+    &lt;li&gt;List item 2&lt;/li&gt;
+    &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Ordered List</h2>
+        </div>
+
+        <div class="element-description">
+            <p>An ordered list is used when the order of items matters. It is created using the <code>&lt;ol&gt;</code>
+                tag, with each item defined by the <code>&lt;li&gt;</code> tag.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Links and Images -->
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Links and Images</h2>
+        </div>
+
+        <div class="element-description">
+            <p>Links are created using the <code>&lt;a&gt;</code> tag, which stands for "anchor". The <code>href</code>
+                attribute specifies the URL of the page the link goes to. </p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;a href="https://example.com"&gt;This is a hyperlink&lt;/a&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <a href="https://example.com">This is a hyperlink</a>
+        </div>
+    </section>
+
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Image Example</h2>
+        </div>
+
+        <div class="element-description">
+            <p>Images are embedded in HTML using the <code>&lt;img&gt;</code> tag. The <code>src</code> attribute
+                specifies the path to the image, while the <code>alt</code> attribute provides alternative text for the
+                image.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;img src="sample-image.jpeg" width="150" height="150" alt="Description of image"&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <img src="sample-image.jpeg" width="150" height="150" alt="Balmond tank build.">
+        </div>
+    </section>
+
+    <!-- Tables -->
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Table Example</h2>
+        </div>
+
+        <div class="element-description">
+            <p>Tables are created using the <code>&lt;table&gt;</code> tag. Inside a table, you can define table headers
+                with <code>&lt;th&gt;</code>, table rows with <code>&lt;tr&gt;</code>, and table data cells with
+                <code>&lt;td&gt;</code>.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Forms -->
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Form Elements</h2>
+        </div>
+
+        <div class="element-description">
+            <p>Forms are used to collect user input. Common form elements include text inputs, password fields, and
+                buttons. The <code>&lt;form&gt;</code> tag wraps all form elements.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;form&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;
+
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password"&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Semantic Elements -->
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Semantic Elements</h2>
+        </div>
+
+        <div class="element-description">
+            <p>Semantic elements provide meaning to the web content. Examples include <code>&lt;header&gt;</code>,
+                <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code>.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;header&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </section>
+
+    <!-- Other Common Elements -->
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Other Elements</h2>
+        </div>
+
+        <div class="element-description">
+            <p>Other common HTML elements include <code>&lt;blockquote&gt;</code> for quotations and
+                <code>&lt;pre&gt;</code> for preformatted text.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;blockquote&gt;This is a blockquote element&lt;/blockquote&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <blockquote>This is a blockquote element</blockquote>
+        </div>
+    </section>
+
+    <section class="element-container">
+        <div class="element-header">
+            <h2 class="element-title">Preformatted Text</h2>
+        </div>
+
+        <div class="element-description">
+            <p>The <code>&lt;pre&gt;</code> tag is used for preformatted text. Text within this tag preserves both
+                spaces and line breaks.</p>
+        </div>
+
+        <div class="code-section">
+            <pre><code>&lt;pre&gt;
+This is preformatted text
+It preserves both spaces and line breaks
+&lt;/pre&gt;</code></pre>
+        </div>
+
+        <div class="output-section">
+            <span class="output-label">Output</span>
+            <pre>
+This is preformatted text
+It preserves both spaces and line breaks
+    </pre>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,18 @@
+Instructions:
+
+Open Notepad (or any text editor).
+
+Copy and paste the code below.
+
+Save the file as my-first-page.html.
+
+Double-click it to open in a browser!
+
+🎯 Tasks:
+1. Replace [Your Name] with his real name.
+
+2. Change the favorite things list with his actual favorites.
+
+3. Replace the picture with an image of your choice.
+
+4. Add another list of your favorite movies.
