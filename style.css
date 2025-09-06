@@ -1,0 +1,33 @@
+body {
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.paragraph {
+    font-size: 20px;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.inner-box {
+    background-color: limegreen;
+    color: white;
+    padding: 10px;
+}
+
+.outer-box {
+    background-color: lightblue;
+    padding: 10px;
+}

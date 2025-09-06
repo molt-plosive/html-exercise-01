@@ -11,8 +11,10 @@ Double-click it to open in a browser!
 🎯 Tasks:
 1. Replace [Your Name] with his real name.
 
-2. Change the favorite things list with his actual favorites.
+2. Replace [Your Age] with your real age.
 
-3. Replace the picture with an image of your choice.
+3. Change the favorite things list with his actual favorites.
 
-4. Add another list of your favorite movies.
+4. Replace the picture with an image of your choice.
+
+5. Add another list of your favorite movies.
