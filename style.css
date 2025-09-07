@@ -21,13 +21,14 @@ a {
     text-decoration: none;
 }
 
+.outer-box {
+    background-color: lightblue;
+    padding: 20px;
+    width: 500px;
+}
+
 .inner-box {
     background-color: limegreen;
     color: white;
-    padding: 10px;
-}
-
-.outer-box {
-    background-color: lightblue;
     padding: 10px;
 }
